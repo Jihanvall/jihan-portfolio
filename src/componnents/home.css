@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+html {
+  scroll-behavior: smooth;
+}
+#home {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #8abaf5, #c9e0fc, #c5dffb);
+}
+
+
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(#74a9e9,#c5dffb);
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  color: #333;
+  height: 110vh;
+}
+.brand span{
+  color:#023d67;
+  font-size:1.6rem;
+  font-weight: 700;
+}
+.hero-section {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 800px;
+  padding: 2.5rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', sans-serif;
+  border-radius: 20px;
+  height: auto;
+  max-height: 90vh;
+  overflow: hidden;
+}
+
+
+.hero-section h1{
+  font-size:2.2rem;
+  color: #023986;
+  margin-bottom: 15px;
+}
+.hero-section .role{
+  font-size: 1rem;
+  color: #012e4e;
+  display:block ;
+  font-weight: 600;
+  padding-inline: 5px;
+}
+.hero-section .description{
+  font-size: 1rem;
+  color: #012e4e;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  font-weight: 500;
+  margin-top: 10px;
+  padding-inline: 5px;
+}
+.buttons{
+  gap: 20px;
+  display: flex;
+}
+
+.primary-btn,
+.secondary-btn{
+  text-decoration: none;
+ transition: 0.3s;
+ font-size: 1rem;
+ font-weight: 600; 
+ background: rgba(140, 196, 239, 0.3);
+ border-radius: 20px;
+ border:1.5px solid #91b9fd;
+ padding: 10px 30px;
+ color: #023986;
+}
+.primary-btn:hover,
+.secondary-btn:hover {
+  transform: scale(1.03);
+  background:#8cb6f1;
+  color: #fff;
+  transition: transform 0.5s ease;
+}
