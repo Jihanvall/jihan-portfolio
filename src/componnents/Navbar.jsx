@@ -1,9 +1,5 @@
 import { useState } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
-
 function Navbar() {
-  const [open, setOpen] = useState(false);
-
   return (
     <nav className="navbar">
       <div className="brand"><span>J</span>ihan Vall</div>

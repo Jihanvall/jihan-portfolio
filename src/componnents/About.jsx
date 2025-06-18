@@ -5,18 +5,6 @@ import './About.css';
 
 function About() {
   const [activeTab, setActiveTab] = useState("education");
-  const [visibleTab,setVisibleTab]=useState("education");
-  const [fade,setFade]=useState(true);
-  const handleTabClick=(tab)=> {
-    if (tab === visibleTab) return;
-    setFade(false);
-    setTimeout(()=>{
-      setVisibleTab(tab);
-      setFade(true);
-    },200);
-    setActiveTab(tab);
-  };
-
   const education = (
     <ul className="education">
       <li><strong>5-years BSc in Software Engineering — AI & Data Science</strong></li>
