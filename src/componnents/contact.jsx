@@ -13,7 +13,7 @@ export default function Contact(){
     const handleSubmit=async(e)=>{
         e.preventDefault();
         try{
-            const res=await fetch("http://localhost:5000/contact",{
+            const res=await fetch("https://flask-backend-u8c0.onrender.com/contact",{
                 method: "POST",
                 headers:{
                     "Content-type":"application/json"

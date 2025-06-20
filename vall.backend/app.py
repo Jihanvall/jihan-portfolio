@@ -1,6 +1,7 @@
 from flask import Flask,request,jsonify
 from flask_cors import CORS
 import smtplib
+import os
 from email.mime.text import MIMEText
 app=Flask(__name__)
 CORS(app)
@@ -27,4 +28,5 @@ def contact():
         return jsonify({"success":False,"message":"Failed to send email."}),500    
                       
 if __name__ =='__main__':
-    app.run(debug=True)
+    port=int(os.environ.get("PORT",5000))
+    app.run(debug=True,host='0.0.0.0',port=port)
