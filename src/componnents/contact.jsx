@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import './contact.css';
 import {FaGithub,FaLink,FaLinkedin} from 'react-icons/fa';
 import {HiOutlineMail} from 'react-icons/hi'
