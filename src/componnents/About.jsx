@@ -31,7 +31,7 @@ function About() {
     <section id="about" className="about-container">
       <div className="top-section">
       <div className="about-left">
-      <img src="/jihan.jpg" alt="Jihan Vall" className="profile-img" />
+
 
       </div>
 

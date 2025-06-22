@@ -53,16 +53,8 @@ export default function Contact() {
           <input type="email" name="email" placeholder="Your Email" value={form.email} onChange={handleChange} required />
           <textarea name="message" placeholder="Your Message" rows="5" value={form.message} onChange={handleChange} required></textarea>
           <button type="submit" disabled={isSending}>{isSending ? "Sending..." : "Send Message"}</button>
-        </form>
-        {status && (
-          <p className={`status-message ${fadeOut ? "fade-out" : ""} ${status.includes("successfully")? "success": "error"}`}>
-            {status}
-          </p>
-        )}
-      
-      </div>
-         <div className="contact-footer">
-        <p className="right">© {new Date().getFullYear()} Jihan Vall. All rights reserved.</p>
+            <div className="contact-footer">
+        <p>© {new Date().getFullYear()} Jihan Vall. All rights reserved.</p>
         <p>
           <a href="mailto:hello@jihanvall.com" className="email-link">
             <HiOutlineMail style={{marginRight:"5px"}} />
@@ -76,6 +68,14 @@ export default function Contact() {
           LinkedIn</a>
         </p>
       </div>
+        </form>
+        {status && (
+          <p className={`status-message ${fadeOut ? "fade-out" : ""} ${status.includes("successfully")? "success": "error"}`}>
+            {status}
+          </p>
+        )}
+      </div>
+       
     </section>
   );
 }

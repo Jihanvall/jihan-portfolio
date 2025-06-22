@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   max-width: 100%;
+  
 }
 html {
   scroll-behavior: smooth;
@@ -24,9 +25,10 @@ body {
   background-size: cover;
   justify-content: center;
   align-items: center;
+  position: relative;
   max-width: 100%;
   color: #333;
-  height: 110vh;
+  height: 100vh;
 }
 .brand span{
   color:#023d67;
@@ -34,22 +36,21 @@ body {
   font-weight: 700;
 }
 .hero-section {
+ position: relative;
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   width: 90%;
-  max-width: 800px;
-  padding: 2.5rem;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  margin-left: 20%;
+  max-width: 70%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
   font-family: 'Segoe UI', sans-serif;
   border-radius: 20px;
   height: auto;
-  max-height: 90vh;
+  max-height: 85vh;
   overflow: hidden;
 }
 
@@ -57,7 +58,13 @@ body {
 .hero-section h1{
   font-size:2.2rem;
   color: #023986;
-  margin-bottom: 15px;
+  max-width: 80%;
+
+}
+.text-content{
+  position: fixed;
+  left:10%;
+  top: 30%;
 }
 .hero-section .role{
   font-size: 1rem;
@@ -65,19 +72,25 @@ body {
   display:block ;
   font-weight: 600;
   padding-inline: 5px;
+  z-index: 2;
+  
 }
 .hero-section .description{
   font-size: 1rem;
   color: #012e4e;
   line-height: 1.5;
-  margin-bottom: 30px;
   font-weight: 500;
-  margin-top: 10px;
   padding-inline: 5px;
+  z-index: 2;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .buttons{
   gap: 20px;
   display: flex;
+  
 }
 
 .primary-btn,
@@ -99,3 +112,53 @@ body {
   color: #fff;
   transition: transform 0.5s ease;
 }
+ .container .profile-img {
+  position: fixed;
+  width: 60%;
+  height: auto;
+ object-fit: cover;
+ opacity: 0.8;
+ background: rgba(255, 255, 255, 0.1);;
+  transition: transform 0.7s ease;
+  left: 70%;
+  object-fit:contain;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+  transition: transform 0.7s ease;
+}
+@media (max-width: 660px) {
+    .container .profile-img {
+    position: fixed !important;
+    z-index: 10 !important;
+    width: 40%;
+    top: 72%;
+    left: 65%;
+
+  }
+}
+@media(min-width:900px){
+     .container .profile-img {
+    position: fixed !important;
+    top: 60%;
+    left: 80%;
+    margin: auto;
+    padding: auto;
+  }
+
+}
+@media (max-width: 768px) {
+ 
+
+  .text-content {
+    max-width: 100%;
+  }
+
+  .profile-img {
+    max-width: 60%;
+    margin-top: 1rem;
+  }
+}
+
+
