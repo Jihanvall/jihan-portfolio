@@ -1,9 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  max-width: 100%;
-}
+
 html {
   scroll-behavior: smooth;
 }
@@ -77,5 +72,15 @@ html {
   padding: 5px 8px;
   transition: 0.8s ease;
 
+}
+@media (max-width: 430px){
+  body{
+    max-width: 100%;
+    max-height: 100vh;
+  }
+  .navbar a{
+    max-width: 100%;
+    max-height: 100vh;
+  }
 }
 

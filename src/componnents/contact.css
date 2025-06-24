@@ -1,19 +1,9 @@
-.contact-section {
-  max-height: 100vh;
-  width: 100%;
-  background: linear-gradient(to bottom, #c5dffb, #6caefe, #a692ec);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-}
-
 .contact-container {
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(10px);
   border-radius: 16px;
   padding: 40px;
-  max-width: 100%;
+  max-width: 70%;
   height: 80vh;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -97,7 +87,7 @@
   text-align: center;
   color: #1a237e;
   font-size: 0.9rem;
-  margin-top: 40px;
+
 }
 .contact-footer svg{
   vertical-align:middle;
@@ -121,6 +111,40 @@
   color: rgb(39, 3, 112);
   text-decoration: underline;
   transition: 0.4s ease-in-out;
+}
+@media(min-width:1150px){
+    .contact-container {
+       width: 40%;
+      
+  }
+}
+@media (max-width:460px){
+  .contact-section{
+     display: flex;
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh;
+    min-width: 95%;
+    margin-left: 20%;
+  }
+  .contact-container{
+    margin: auto;
+    width: 80%;
+  }
+  .contact-footer{
+     position: absolute;
+       top: 89%;
+       gap: 10px;
+       left: 0px;
+       line-height: 5px;
+  }
+.contact-footer p{
+  font-size: small;
+}
+.contact-footer a{
+  font-size: small;
+}
+
 }
 
 

@@ -1,8 +1,10 @@
 import React from 'react';
 import './home.css';
+import { div } from 'framer-motion/client';
 
 const Home = () => {
   return (
+    <div class='jihan'>
     <section id='home' className='hero-section'>
       <div className='container home-wrapper'>
         <div className="text-content">
@@ -24,6 +26,7 @@ const Home = () => {
         <img src="/jihan.png" className="profile-img" alt="Jihan Vall" />
       </div>
     </section>
+    </div>
   );
 };
 

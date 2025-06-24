@@ -1,12 +1,12 @@
 .skills-section{
    height: 100vh;
-   width: 100%;
+   max-width: 100%;
    display: flex;
    align-items: center;
    justify-content: center;
-   padding: 1rem;
-   background:linear-gradient(to bottom,#8abaf5,#c9e0fc ,#c5dffb );
-}
+   
+
+} 
 .skills-tabs{
     display: flex;
     max-width: 100%;
@@ -55,6 +55,20 @@
   align-items: center;
   gap: 2rem;
 }
+@media(min-width:1050px){
+   .skills-section{
+        padding: 15% 20%;
+   }
+}
+@media (max-width:460px){
+  .skills-section{
+      display: flex;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh;
+    min-width: 90%;
+    margin-left: 30%;
+  }}
 
 
 
