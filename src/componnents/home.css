@@ -125,11 +125,11 @@ transition: transform 0.7s ease;
   transform: scale(1.05);
   transition: transform 0.7s ease;
 }
-@media (max-width: 660px) {
+@media (max-width: 600px) {
     .container .profile-img {
     position: fixed;
     width: 35%;
-    padding: 100px 70px;
+    padding: 100px 90px;
 
   }
   .hero-section{
@@ -178,7 +178,7 @@ transition: transform 0.7s ease;
 .container .profile-img{
   width: 18%;
   position: fixed;
-  padding: 82px 65px;
+  padding: 92px 75px;
 }
 .hero-section .description{
   font-size: 10px;
