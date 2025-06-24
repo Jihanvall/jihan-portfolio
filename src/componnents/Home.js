@@ -1,7 +1,5 @@
 import React from 'react';
 import './home.css';
-import { div } from 'framer-motion/client';
-
 const Home = () => {
   return (
     <div class='jihan'>
