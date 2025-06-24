@@ -117,7 +117,7 @@ background: linear-gradient(to bottom, #c5dffb, #6caefe, #929cec);
  opacity: 0.8;
 transition: transform 0.7s ease;
   object-fit:contain;
-  padding: 70px 40px ;
+  padding: 90px 40px ;
   position: fixed;
 }
 
@@ -129,7 +129,7 @@ transition: transform 0.7s ease;
     .container .profile-img {
     position: fixed;
     width: 35%;
-    padding: 120px 50px;
+    padding: 100px 70px;
 
   }
   .hero-section{

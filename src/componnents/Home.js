@@ -21,7 +21,7 @@ const Home = () => {
 
           </div>
         </div>
-        <img src="/jihan.png" className="profile-img" alt="Jihan Vall" />
+        <img src="/me-removebg-preview.png" className="profile-img" alt="Jihan Vall" />
       </div>
     </section>
     </div>
