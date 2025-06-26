@@ -41,7 +41,6 @@ export default function Skills() {
             </div>
           ))}
 
-          {/* ✅ underline positioned based on tabRefs */}
           <motion.div
             className="skills-underline"
             animate={underlineStyle}
