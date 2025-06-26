@@ -2,56 +2,36 @@
 html {
   scroll-behavior: smooth;
 }
-
-
-#home {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-   background: linear-gradient(to bottom, #c5dffb, #6caefe, #adbffe);
-}
-
-
-
 body {
   font-family: 'Segoe UI', sans-serif;
-  justify-content: center;
-  align-items: center;
-  max-width: 100vw;
-  max-height: 100vh;
   color: #333;
   background:linear-gradient(to bottom,#8abaf5,#c9e0fc ,#c5dffb );
-  background-size: cover;
- 
-
-  
 }
 .brand span{
   color:#023d67;
   font-size:1.6rem;
   font-weight: 700;
 }
-.hero-section {
 
+.hero-section {
+ position: relative;
 background: linear-gradient(to bottom, #c5dffb, #6caefe, #929cec);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  width: 90%;
-  margin-left: 20%;
-  max-width: 60%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
+  width: 80%;
+  margin: 0px 50px;
   font-family: 'Segoe UI', sans-serif;
   border-radius: 20px;
-  height: auto;
-  max-height: 75vh;
+ 
+  height: 50vh;
   overflow: hidden;
 }
-
+.text-content{
+  position: relative;
+  flex-direction: column;
+  padding-left: 10px;
+}
 
 h1{
   font-size:2.2rem;
@@ -62,20 +42,7 @@ h3{
   color: #023986;
   font-size: 1.2rem;
 }
-.text-content{
-  position: fixed;
-  left:1%;
-  top: 10%;
-}
-.hero-section .role{
-  font-size: 1rem;
-  color: #012e4e;
-  display:block ;
-  font-weight: 600;
-  padding-inline: 5px;
-  z-index: 2;
-  
-}
+
 .hero-section .description{
   font-size: 1rem;
   color: #012e4e;
@@ -83,16 +50,10 @@ h3{
   font-weight: 500;
   padding-inline: 5px;
   z-index: 2;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   
 }
 .buttons{
-  padding-top: 10px;
   gap: 20px;
-  display: flex;
-  
 }
 
 .primary-btn
@@ -101,10 +62,10 @@ h3{
  transition: 0.3s;
  font-size: 1rem;
  font-weight: 600; 
- background: rgba(140, 196, 239, 0.3);
+ background: rgba(140, 196, 239, 0.4);
  border-radius: 20px;
  border:1.5px solid #91b9fd;
- padding: 10px 30px;
+ padding: 5px 15px;
  color: #023986;
 }
 .primary-btn:hover {
@@ -114,111 +75,56 @@ h3{
   transition: transform 0.5s ease;
 }
  .container .profile-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
   width: 40%;
   height: auto;
- object-fit: cover;
  opacity: 0.8;
 transition: transform 0.7s ease;
-  object-fit:contain;
-  padding: 90px 40px ;
-  position: fixed;
 }
 
 .profile-img:hover {
   transform: scale(1.05);
   transition: transform 0.7s ease;
 }
-@media (max-width: 600px) {
+@media(min-width:1000px){
     .container .profile-img {
-    position: fixed;
-    width: 35%;
-    padding: 100px 90px;
-
+    width: 20%;
+    right:0 ;
+    bottom: 0;
   }
   .hero-section{
-    max-height:70vh ;
-    max-width: 100%;
+    height: 70vh;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
-@media(max-width:900px){
-     .container .profile-img {
-    margin: auto;
-    padding: auto;
-    width: 50%;
-    padding:90px 0px;
-    position: fixed;
+  @media(max-width:1000px){
+    .container .profile-img {
+    width: 30%;
+    right:0 ;
+    bottom: 0;
   }
   .hero-section{
-    width: 100%;
-    padding: 0px 20px;
     height: 60vh;
   }
-
-
+ 
 }
-@media(min-width:800px){
-    .container .profile-img {
-    margin: auto;
-    padding: auto;
-    width: 40%;
-    padding: 0px 50px;
-    position: fixed;
-  }
+@media(max-width:490px){
   .hero-section{
-    max-height: 60vh;
+    width: 100%;
+    height: 70vh;
   }
+   .text-content{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 3;
+   }
 }
-@media(min-width:1150px){
-    .container .profile-img {
-    width: 27%;
-    padding: 0px 180px;
-    position: fixed;
-  }
-  .hero-section{
-    max-height: 60vh;
-  }
-}
-@media (max-width: 490px){
- body{
-  width: 100%;
- }
-  .hero-section{
-    min-width: 100%;
-    height: auto;
-    max-height: 65vh;
-    margin: auto;
-    padding: auto;
-  }
-  .text-content{
-   display: flex;
-   flex-direction: column;
-    margin:auto;
-    padding: auto;
-}
-  .container .profile-img {
-    position: relative;
-    width: 50%;
-    position: fixed;
-    padding: 20px ;
-    
-  }
-  .hero-section .description{
-    font-size: larger;
-    padding: 1px 0px;
-    
-  }
-  .primary-btn
-{
- font-size: 1.3rem;
-}
-.buttons{
-  gap: 40px;
-  margin-top: 10%;
-}
-
-
-
-}
-
-
 
