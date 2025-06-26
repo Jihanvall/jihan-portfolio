@@ -153,19 +153,28 @@ transition: transform 0.7s ease;
 
 
 }
-@media(min-width:1000px){
+@media(min-width:800px){
     .container .profile-img {
     margin: auto;
     padding: auto;
-    width: 50%;
-    padding: 0px 20px;
+    width: 40%;
+    padding: 0px 50px;
     position: fixed;
   }
   .hero-section{
     max-height: 60vh;
   }
 }
-
+@media(min-width:1150px){
+    .container .profile-img {
+    width: 27%;
+    padding: 0px 180px;
+    position: fixed;
+  }
+  .hero-section{
+    max-height: 60vh;
+  }
+}
 @media (max-width: 490px){
  
   .hero-section{
