@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import Navbar from './componnents/Navbar';
 import Home from './componnents/Home';
 import About from './componnents/About';
@@ -9,6 +10,12 @@ import Contact from './componnents/contact';
 function App() {
   return (
     <div>
+      <Helmet>
+         <title>Jihan Vall - Software Engineer </title>
+          <meta name="description" content="Portfolio of Jihan Vall - Software Engineer specialied in AI"/>
+          <meta name="robots" content="index,follow"/>
+          <meta name="author" content="Jihan Vall"/>
+      </Helmet>
       <Navbar />
      <Home/>
      <About/>
