@@ -1,13 +1,17 @@
 .contact-container {
+  position: relative;
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(10px);
   border-radius: 16px;
-  padding: 40px;
   max-width: 70%;
   height: 80vh;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   text-align: center;
-   margin: 60px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
 }
 
 .contact-title {
@@ -36,7 +40,6 @@
   background: white;
   font-size: 1rem;
 }
-
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
@@ -100,7 +103,8 @@
   transition:  0.4s ease-in-out;
 }
 .contact-footer .email-link{
-  color: #e9e4fc;
+  color: #0430a1;
+  font-weight: 650;
   text-decoration: none;
   
 }
@@ -112,37 +116,39 @@
   text-decoration: underline;
   transition: 0.4s ease-in-out;
 }
-@media(min-width:1150px){
+@media(min-width:1000px){
     .contact-container {
        width: 40%;
+       height: auto;
+
       
   }
 }
-@media (max-width:460px){
-  .contact-section{
-     display: flex;
+@media (max-width:490px){
+   .contact-section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: center; 
-    min-height: 100vh;
-    min-width: 95%;
-    margin-left: 20%;
+   }
+  .contact-form{
+    width: 100%;
+    padding: 10px 10px ;
   }
   .contact-container{
+    width: 100%;
+    height: 100%;;
     margin: auto;
-    width: 80%;
+    padding: 20px 100px;
+    margin-left: 100px;
   }
-  .contact-footer{
-     position: absolute;
-       top: 89%;
-       gap: 10px;
-       left: 0px;
-       line-height: 5px;
-  }
+
 .contact-footer p{
-  font-size: small;
+  font-size: medium;
 }
 .contact-footer a{
-  font-size: small;
+  font-size: medium;
 }
 
 }

@@ -134,69 +134,74 @@ transition: transform 0.7s ease;
   }
   .hero-section{
     max-height:70vh ;
-    max-width: 75%;
+    max-width: 100%;
   }
 }
-@media(min-width:900px){
+@media(max-width:900px){
      .container .profile-img {
     margin: auto;
     padding: auto;
-    width: 20%;
-    padding: 130px 180px;
+    width: 50%;
+    padding:90px 0px;
     position: fixed;
   }
+  .hero-section{
+    width: 100%;
+    padding: 0px 20px;
+    height: 60vh;
+  }
+
 
 }
-@media(min-width:1150px){
+@media(min-width:1000px){
     .container .profile-img {
     margin: auto;
     padding: auto;
-    width: 20%;
-    padding: 100px 250px;
+    width: 50%;
+    padding: 0px 20px;
     position: fixed;
+  }
+  .hero-section{
+    max-height: 60vh;
   }
 }
 
-@media (max-width: 460px){
-  body{
-    max-width: 80%;
-    max-height: 100vh;
-  }
+@media (max-width: 490px){
+ 
   .hero-section{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
-    max-height: 40vh;
+    min-width: 100%;
+    padding: 0px 55px;
+    height: auto;
+    max-height: 65vh;
+    margin: auto;
   }
   .text-content{
    display: flex;
    flex-direction: column;
-   
- 
+    margin:auto;
+    padding: auto;
 }
-.container .profile-img{
-  width: 18%;
-  position: fixed;
-  padding: 92px 75px;
+  .container .profile-img {
+    position: relative;
+    width: 50%;
+    position: fixed;
+    padding: 20px ;
+    
+  }
+  .hero-section .description{
+    font-size: larger;
+    padding: 1px 0px;
+    
+  }
+  .primary-btn
+{
+ font-size: 1.3rem;
 }
-.hero-section .description{
-  font-size: 10px;
- 
+.buttons{
+  gap: 40px;
+  margin-top: 10%;
 }
-.hero-section .role{
-  font-size: 10px;
-}
-.hero-section h1{
-  font-size: 1rem;
-  margin:0 10px;
-  gap: 20px;
-}
-.primary-btn{
-  padding: 5px 5px;
-  font-size: 0.8rem;
 
-}
 
 
 }

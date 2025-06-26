@@ -73,7 +73,7 @@ html {
   transition: 0.8s ease;
 
 }
-@media (max-width: 430px){
+@media (max-width: 490px){
   body{
     max-width: 100%;
     max-height: 100vh;
@@ -83,4 +83,21 @@ html {
     max-height: 100vh;
   }
 }
-
+@media(max-width:780px){
+  .nav-links{
+    display: none;
+    flex-direction: column;
+    background-color: #fefbfb;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  .nav-links.active{
+    display: flex;
+  }
+  .hamburger{
+    display: flex;
+  }
+}
