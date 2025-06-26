@@ -19,11 +19,15 @@ background: linear-gradient(to bottom, #c5dffb, #6caefe, #929cec);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  width: 80%;
+  width: 80vw;
   margin: 0px 50px;
   font-family: 'Segoe UI', sans-serif;
   border-radius: 20px;
- 
+ display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
   height: 50vh;
   overflow: hidden;
 }
@@ -115,8 +119,14 @@ transition: transform 0.7s ease;
 }
 @media(max-width:490px){
   .hero-section{
-    width: 100%;
+    width: 100vw;
     height: 70vh;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+  flex-direction: column;
+  justify-content: center; /* توسيط عمودي */
+  align-items: center; 
   }
    .text-content{
     position:fixed;
