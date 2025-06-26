@@ -1,6 +1,6 @@
 import React from 'react';
 import './home.css';
-import { title } from 'framer-motion/client';
+
 const Home = () => {
   return (
     
