@@ -64,7 +64,7 @@
   .skills-section{ 
     width: 100vw; /* Take full screen width */
   max-width: 100%; /* Prevent overflow */
-  padding: 10px clamp(10px, 5vw, 60px); /* Dynamic horizontal padding */
+  padding: 10px 25px clamp(10px, 5vw, 60px); /* Dynamic horizontal padding */
   
   word-break: keep-all;
    /* Prevent long words from overflowing */
