@@ -32,12 +32,13 @@
 /* Responsive styles */
 @media (max-width: 768px) {
   .nav-links {
+    position: absolute;
     display: none;
     flex-direction: column;
     background:rgba(129, 137, 244, 0.5);
     position: absolute;
     top: 60px;
-    right: 20px;
+    right: 0px;
     padding: 60px;
     border-radius: 8px;
   }
@@ -47,6 +48,8 @@
   }
 
   .burger {
+    position: absolute;
+    right: 0;
     display: flex;
     
   }

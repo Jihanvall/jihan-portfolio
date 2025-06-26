@@ -1,14 +1,17 @@
 import React from 'react';
 import './home.css';
+import { title } from 'framer-motion/client';
 const Home = () => {
   return (
+    
     <div class='jihan'>
+      <title>Jihan Vall</title>
     <section id='home' className='hero-section'>
       <div className='container home-wrapper'>
         <div className="text-content">
-          <h1>Hi, I'm <span>J</span>ihan Vall</h1>
+          <h1>Hi, I'm <span>J</span>ihan Vall</h1> <h3> Software Engineer specialized<br></br> in AI & Web Development</h3>
           <p className='description'>
-            Software Engineer specialized in Artificial Intelligence.<br />
+           
             I build complete, modern, and scalable web applications.
             From responsive front-ends to powerful back-ends,<br />
             I provide end-to-end solutions tailored to your business needs.<br />

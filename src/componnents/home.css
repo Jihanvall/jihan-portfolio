@@ -53,11 +53,14 @@ background: linear-gradient(to bottom, #c5dffb, #6caefe, #929cec);
 }
 
 
-.hero-section h1{
+h1{
   font-size:2.2rem;
   color: #023986;
   max-width: 80%;
-
+}
+h3{
+  color: #023986;
+  font-size: 1.2rem;
 }
 .text-content{
   position: fixed;
@@ -176,13 +179,15 @@ transition: transform 0.7s ease;
   }
 }
 @media (max-width: 490px){
- 
+ body{
+  width: 100%;
+ }
   .hero-section{
     min-width: 100%;
-    padding: 0px 55px;
     height: auto;
     max-height: 65vh;
     margin: auto;
+    padding: auto;
   }
   .text-content{
    display: flex;
