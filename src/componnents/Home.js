@@ -5,7 +5,6 @@ const Home = () => {
   return (
     
     <div class='jihan'>
-      <title>Jihan Vall</title>
     <section id='home' className='hero-section'>
       <div className='container home-wrapper'>
         <div className="text-content">
