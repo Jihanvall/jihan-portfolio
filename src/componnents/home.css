@@ -6,6 +6,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
   color: #333;
   background:linear-gradient(to bottom,#8abaf5,#c9e0fc ,#c5dffb );
+  background-size: cover;
 }
 .brand span{
   color:#023d67;
@@ -19,17 +20,21 @@ background: linear-gradient(to bottom, #c5dffb, #6caefe, #929cec);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  width: 80vw;
-  margin: 0px 50px;
+  max-width: 100vw;
   font-family: 'Segoe UI', sans-serif;
   border-radius: 20px;
- display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   overflow: auto;
   height: 50vh;
   overflow: hidden;
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    flex-direction: column;
+    max-width: 500px;
+    padding: 10px 10px;
+    width: 100%;
 }
 .text-content{
   position: relative;
@@ -100,33 +105,40 @@ transition: transform 0.7s ease;
   }
   .hero-section{
     height: 70vh;
-    width: 70%;
+    width:95%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px 35px;
+  }
+  .container {
+    max-width: 100%;
+    width: 100vw;
+     /* optional for spacing */
   }
 }
-  @media(max-width:1000px){
+ @media (min-width: 601px) and (max-width: 999px){
     .container .profile-img {
     width: 25%;
     right:0 ;
     bottom: 0;
   }
   .hero-section{
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
     height: 60vh;
   }
  
 }
-@media(max-width:490px){
+@media(max-width:600px){
   .hero-section{
-    width: 90vw;
+    width: 100vw;
+    max-width: 100%;
     height: 65vh;
     overflow: hidden;
-    box-sizing: border-box;
-    display: flex;
-  flex-direction: column;
-  justify-content: center; /* توسيط عمودي */
-  align-items: center; 
+    box-sizing: border-box; 
   }
       .container .profile-img {
     width: 35%;

@@ -145,7 +145,7 @@ position: relative;
     opacity: 1;
   }
 }
-@media (max-width: 490px){
+@media (max-width: 6000px){
   .about-section{
   
   width: 100%;
