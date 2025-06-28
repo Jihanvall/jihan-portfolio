@@ -145,19 +145,16 @@ position: relative;
     opacity: 1;
   }
 }
-@media (max-width: 6000px){
+@media (max-width: 600px){
   .about-section{
+  width: 100vw ;
+  max-width:100%;
+   min-height: 130vh;
   
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 150px 40px;
   }
 .about-right{
-  width: 90%;
-  
-
+  width: 100vw;
+  max-width: 100vw;
 }
 .about-right h2{
   font-size: 1.5rem;
@@ -166,6 +163,9 @@ position: relative;
 .about-right p{
   font-size: medium;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .tab{
   font-size: medium;
