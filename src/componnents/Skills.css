@@ -56,11 +56,13 @@
   gap: 2rem;
 }
 @media(min-width:1000px){
-  .skills-content{
-  width: 100%;
+  .skills-section{
+    width: 100vw;
+  max-width: 100%;
   }
+
 }
-@media (max-width:490px){
+@media (max-width:600px){
   .skills-section{ 
     width: 100vw; /* Take full screen width */
   max-width: 100%; /* Prevent overflow */
