@@ -24,8 +24,5 @@ const Home = () => {
         <img src="/me-removebg-preview.png" className="profile-img" alt="Jihan Vall" />
       </div>
     </section>
-    </div>
-  );
-};
-
+    </div>);};
 export default Home;

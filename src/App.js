@@ -5,8 +5,6 @@ import About from './componnents/About';
 import './index.css';
 import Skills from './componnents/Skills';
 import Contact from './componnents/contact';
-
-
 function App() {
   return (
     <div>
