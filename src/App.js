@@ -9,7 +9,7 @@ function App() {
   return (
     <div>
       <Helmet>
-         <title>Jihan Vall - Software Engineer </title>
+         <title>Jihan Vall-Portfolio</title>
           <meta name="description" content="Portfolio of Jihan Vall - Software Engineer specialied in AI"/>
           <meta name="robots" content="index,follow"/>
           <meta name="author" content="Jihan Vall"/>
