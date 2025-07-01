@@ -18,10 +18,13 @@ export default function Skills() {
 
   useEffect(() => {
     const el = tabRefs.current[activeIndex];
-    if (el) {
+    const wrapper=document.querySelector('.skills-wrapper')
+    if (el && wrapper) {
+      const elRect=el.getBoundingClientRect();
+      const wrapperRect=wrapper.getBoundingClientRect();
       setUnderlineStyle({
         left: `${el.offsetLeft}px`,
-        top: `${el.offsetTop + el.offsetHeight}px`,
+        top: `${el.offsetTop + el.offsetHeight + 9}px`,
         width: `${el.offsetWidth}px`
       });
     }
@@ -41,11 +44,8 @@ export default function Skills() {
               {cat.name}
             </div>
           ))}
-
-          {/* Underline */}
-         <div className="skills-underline" style={underlineStyle}></div>
         </div>
-
+        <div className="skills-underline" style={underlineStyle}></div>
         <AnimatePresence mode="wait">
           <motion.div
             key={activeIndex}
