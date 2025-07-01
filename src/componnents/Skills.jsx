@@ -14,14 +14,15 @@ const categories = [
 export default function Skills() {
   const [activeIndex, setActiveIndex] = useState(0);
   const tabRefs = useRef([]);
-  const [underlineStyle, setUnderlineStyle] = useState({ left: 0, width: 0 });
+  const [underlineStyle, setUnderlineStyle] = useState({ left: 0, top: 0, width: 0 });
 
   useEffect(() => {
     const el = tabRefs.current[activeIndex];
     if (el) {
       setUnderlineStyle({
-        left: el.offsetLeft,
-        width: el.offsetWidth
+        left: `${el.offsetLeft}px`,
+        top: `${el.offsetTop + el.offsetHeight}px`,
+        width: `${el.offsetWidth}px`
       });
     }
   }, [activeIndex]);
@@ -41,11 +42,8 @@ export default function Skills() {
             </div>
           ))}
 
-          <motion.div
-            className="skills-underline"
-            animate={underlineStyle}
-            transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-          />
+          {/* Underline */}
+         <div className="skills-underline" style={underlineStyle}></div>
         </div>
 
         <AnimatePresence mode="wait">
@@ -68,4 +66,3 @@ export default function Skills() {
     </section>
   );
 }
-
