@@ -20,8 +20,7 @@ export default function Skills() {
     const el = tabRefs.current[activeIndex];
     const wrapper=document.querySelector('.skills-wrapper')
     if (el && wrapper) {
-      const elRect=el.getBoundingClientRect();
-      const wrapperRect=wrapper.getBoundingClientRect();
+
       setUnderlineStyle({
         left: `${el.offsetLeft}px`,
         top: `${el.offsetTop + el.offsetHeight + 9}px`,
